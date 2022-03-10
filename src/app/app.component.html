@@ -4,10 +4,16 @@
 
       <h1 class="title has-text-centered">Typing Challenge</h1>
       
-      <p class="has-text-centered">Randomly generated text should go here</p>
+      <p class="has-text-centered">
+        {{ this.randomText }}
+      </p>
       
       <div class="field">
-        <input class="input" type="text" />
+        <input 
+          class="input" 
+          type="text" 
+          (input)="onInput($event)"
+        />
       </div>
       
       <div class="box has-text-centered">

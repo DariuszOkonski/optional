@@ -8,5 +8,10 @@ import { lorem } from 'faker';
 })
 
 export class AppComponent {  
-    name = 'Dariusz'   
+  randomText = lorem.sentence();
+
+
+  onInput(event: any) {
+    console.log(event.target.value)
+  }
 }
