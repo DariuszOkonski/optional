@@ -16,7 +16,7 @@
         />
       </div>
       
-      <div class="box has-text-centered">
+      <div *ngIf="this.randomText === this.enteredText" class="box has-text-centered">
         <h1 class="title">Success!</h1>
       </div>
       
